@@ -1,0 +1,250 @@
+return {
+  version = "1.5",
+  luaversion = "5.1",
+  tiledversion = "1.8.5",
+  orientation = "orthogonal",
+  renderorder = "right-down",
+  width = 30,
+  height = 20,
+  tilewidth = 8,
+  tileheight = 8,
+  nextlayerid = 3,
+  nextobjectid = 13,
+  properties = {},
+  tilesets = {
+    {
+      name = "change.tic",
+      firstgid = 1,
+      tilewidth = 8,
+      tileheight = 8,
+      spacing = 0,
+      margin = 0,
+      columns = 16,
+      image = "area1ss.png",
+      imagewidth = 128,
+      imageheight = 128,
+      objectalignment = "unspecified",
+      tileoffset = {
+        x = 0,
+        y = 0
+      },
+      grid = {
+        orientation = "orthogonal",
+        width = 8,
+        height = 8
+      },
+      properties = {},
+      wangsets = {},
+      tilecount = 256,
+      tiles = {}
+    }
+  },
+  layers = {
+    {
+      type = "tilelayer",
+      x = 0,
+      y = 0,
+      width = 30,
+      height = 20,
+      id = 1,
+      name = "Tile Layer 1",
+      visible = true,
+      opacity = 1,
+      offsetx = -128,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      encoding = "lua",
+      chunks = {
+        {
+          x = 0, y = 0, width = 16, height = 16,
+          data = {
+            17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 69, 69, 69, 69, 69, 69,
+            17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 69, 70, 70, 70, 70, 70,
+            17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 69, 70, 56, 57, 58, 70,
+            17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 69, 70, 72, 73, 74, 70,
+            17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 69, 55, 72, 73, 74, 101,
+            17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 69, 71, 72, 73, 74, 54,
+            17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 69, 3, 88, 89, 90, 19,
+            17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 69, 4, 53, 53, 53, 35,
+            17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 69, 19, 20, 19, 20, 19,
+            17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 69, 35, 36, 35, 36, 35,
+            17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 69, 5, 6, 6, 6, 6,
+            17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 69, 21, 22, 22, 22, 22,
+            17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 69, 37, 38, 38, 38, 38,
+            17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 69, 52, 4, 3, 4, 3,
+            17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 69, 69, 69, 69, 69, 69,
+            17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17
+          }
+        },
+        {
+          x = 16, y = 0, width = 16, height = 16,
+          data = {
+            69, 69, 69, 69, 69, 69, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17,
+            70, 70, 70, 70, 70, 69, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17,
+            70, 70, 70, 70, 70, 69, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17,
+            70, 70, 87, 70, 70, 69, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17,
+            55, 55, 103, 55, 55, 69, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17,
+            12, 54, 54, 54, 102, 69, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17,
+            20, 19, 20, 19, 20, 69, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17,
+            36, 35, 36, 35, 36, 69, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17,
+            20, 3, 51, 19, 20, 69, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17,
+            36, 4, 3, 35, 36, 69, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17,
+            7, 4, 3, 3, 4, 69, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17,
+            23, 27, 8, 9, 10, 69, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17,
+            39, 43, 24, 25, 26, 69, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17,
+            52, 43, 40, 41, 42, 69, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17,
+            69, 69, 53, 53, 53, 69, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17,
+            17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17
+          }
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 2,
+      name = "collision",
+      visible = false,
+      opacity = 1,
+      offsetx = 16*8,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 1,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = -48,
+          y = 0,
+          width = 8,
+          height = 120,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 2,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = -40,
+          y = 112,
+          width = 56,
+          height = 8,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 3,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 40,
+          y = 0,
+          width = 8,
+          height = 120,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 4,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = -40,
+          y = 0,
+          width = 80,
+          height = 8,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 5,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = -40,
+          y = 80,
+          width = 48,
+          height = 24,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 6,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 8,
+          y = 88,
+          width = 8,
+          height = 24,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 7,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = -40,
+          y = 8,
+          width = 8,
+          height = 40,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 8,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = -32,
+          y = 8,
+          width = 72,
+          height = 8,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 9,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = -32,
+          y = 16,
+          width = 72,
+          height = 32,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        },
+        {
+          id = 11,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = -32,
+          y = 48,
+          width = 24,
+          height = 8,
+          rotation = 0,
+          visible = true,
+          properties = {}
+        }
+      }
+    }
+  }
+}
